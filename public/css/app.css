@@ -10662,11 +10662,7 @@ a.text-dark:focus {
   cursor: default;
 }
 
-.menu-auto .ui-menu-item {
-  padding: 0 10px;
-}
-
-.menu-auto .ui-menu-item:hover {
-  background: blue !important;
+.alert {
+  display: none;
 }
 

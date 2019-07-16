@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\GuzzleController;
 use App\Evento;
 
 class EventoController extends Controller
@@ -15,6 +16,9 @@ class EventoController extends Controller
         return $data;
     }
     public function registrarEvento(Request $request){
-        echo $request->input('evento');
+        $guzzle = new GuzzleController(); 
+        $teste =  $guzzle->cadastroEvento($request->input('evento'));
+        return response()->json($teste);
     }
+    
 }
