@@ -17,8 +17,7 @@ class EventoController extends Controller
     }
     public function registrarEvento(Request $request){
         $guzzle = new GuzzleController(); 
-        $teste =  $guzzle->cadastroEvento($request->input('evento'));
-        return response()->json($teste);
+        return response()->json($guzzle->cadastroEvento($request->input('evento')));
     }
     
 }
