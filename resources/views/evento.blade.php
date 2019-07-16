@@ -15,9 +15,10 @@
     <div class="container">
         <div class="col-md-6 mx-auto mt-5">
             @csrf
+            <div class="alert alert-success" role="alert">
+            </div>
             <label for="autocomplete">Digite o evento</label>
             <input id="autocomplete" class="form-control d-flex align-items-center complete"> 
-            <button class="salvar btn btn-success mt-3 float-right">Salvar</button>   
         </div>
     </div>
 </body>
